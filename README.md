@@ -31,6 +31,14 @@ frog.splash('just testing the system')
 
 This will calculate the amount of time spent between clock in and clock out, and post the note to the log file.  It wil also calculate the entire amound of time spent on that particular day.
 
+### Ask
+
+If you have splished but not splashed, and want to find out how much time has elapsed, simply ask:
+
+```buildoutcfg
+frog.ask()
+```
+
 ### Discrete mode
 
 Alternatively, the frog can be set up in discrete mode, to record discrete events without calculating the time in between.  
