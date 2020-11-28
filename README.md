@@ -11,7 +11,7 @@ frog = fro.Frogger('frogs/test_log.txt')
 
 If the file does not yet exist, it will be created.  Otherwise the present contents of the frog will get loaded.
 
-### Splish in
+### Splish
 
 Clock in like this:
 
@@ -21,7 +21,7 @@ frog.splish()
 
 This will begin keeping track of time until a clock out.
 
-### Splash out
+### Splash
 
 Clock out like this, adding a note to summarize activities:
 
@@ -50,7 +50,7 @@ import froggers as fro
 frog = fro.Frogger('frogs/shopping_list.txt', discrete=True)
 ```
 
-### Add an entry
+### Croak
 
 Add an entry to the frog:
 
