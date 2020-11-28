@@ -29,7 +29,7 @@ Clock out like this, adding a note to summarize activities:
 frog.splash('just testing the system')
 ```
 
-This will calculate the amount of time spent between clock in and clock out, and post the note to the log file.  It wil also calculate the entire amound of time spend on that particular day.
+This will calculate the amount of time spent between clock in and clock out, and post the note to the log file.  It wil also calculate the entire amound of time spent on that particular day.
 
 ### Discrete mode
 
@@ -39,7 +39,7 @@ Initialize in discrete mode:
 
 ```buildoutcfg
 import froggers as fro
-frog = fro.Frogger('frogs/discrete_list.txt', discrete=True)
+frog = fro.Frogger('frogs/shopping_list.txt', discrete=True)
 ```
 
 ### Add an entry
