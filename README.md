@@ -50,6 +50,6 @@ Add an entry to the frog:
 frog.croak('buy apples today')
 ```
 
-This will simply add a timestamped entry with no duration accounted for
+This will simply add a timestamped entry with no duration accounted for.
 
 ### Enjoy!
