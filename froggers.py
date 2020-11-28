@@ -334,7 +334,7 @@ class Frogger(list):
 
 
 # fro.reload(fro); froggo = fro.froggo; jerko = fro.jerko; pondo = fro.pondo; frodo = fro.frodo;
-# toado = fro.toado; shoppo = fro.shoppo; scopo = fro.scopo; banko = fro.banko
+# toado = fro.toado; shoppo = fro.shoppo; scopo = fro.scopo; banko = fro.banko; testo = fro.testo
 froggo = Frogger('frogs/omi_log.txt')
 pondo = Frogger('frogs/omi_thoughts.txt', discrete=True)
 jerko = Frogger('frogs/doucheberry_diaries.txt', discrete=True)
