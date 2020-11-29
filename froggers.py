@@ -147,6 +147,27 @@ class Frogger(list):
 
         return None
 
+    def flick(self):
+        """Flick away checked off items.
+
+        Arguments:
+            None
+
+        Returns:
+            None
+        """
+
+        # go through each day
+        for day in self:
+
+            # remove entries ending with X
+            day['entries'] = [entry for entry in day['entries'] if not entry['note'].endswith('X')]
+
+        # digest
+        self.digest()
+
+        return None
+
     def ingest(self):
         """Ingest the contents of the current work log.
 
@@ -333,7 +354,7 @@ class Frogger(list):
         return None
 
 
-# fro.reload(fro); froggo = fro.froggo; jerko = fro.jerko; pondo = fro.pondo; frodo = fro.frodo;
+# fro.reload(fro); froggo = fro.froggo; jerko = fro.jerko; pondo = fro.pondo; frodo = fro.frodo
 # toado = fro.toado; shoppo = fro.shoppo; scopo = fro.scopo; banko = fro.banko; testo = fro.testo
 froggo = Frogger('frogs/omi_log.txt')
 pondo = Frogger('frogs/omi_thoughts.txt', discrete=True)
