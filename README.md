@@ -65,7 +65,7 @@ This will simply add a timestamped entry with no duration accounted for.
 Flick will remove any entry ending in an X:
 
 ```buildoutcfg
-frog.flick())
+frog.flick()
 ```
 
 This is useful if the frog is being used as a check list. It will remove any items already checked off.  Add an X after any note you'd like flicked away.
