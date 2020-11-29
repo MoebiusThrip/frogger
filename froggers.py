@@ -157,6 +157,9 @@ class Frogger(list):
             None
         """
 
+        # reingest
+        self.ingest()
+
         # go through each day
         for day in self:
 
