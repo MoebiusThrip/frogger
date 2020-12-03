@@ -147,6 +147,25 @@ class Frogger(list):
 
         return None
 
+    def eat(self):
+        """Refresh the page with an ingest digest cycle.
+
+        Arguments:
+            None
+
+        Returns:
+            None
+
+        Populates:
+            self
+        """
+
+        # ingest, digest
+        self.ingest()
+        self.digest()
+
+        return None
+
     def flick(self):
         """Flick away checked off items.
 
@@ -256,11 +275,14 @@ class Frogger(list):
                         finish = day['date'].replace(hour=int(hour), minute=int(minute), second=0, microsecond=0)
                         entry['finish'] = finish
 
-                    # add duration
+                    # calculate duration
                     duration = (finish - start).total_seconds() / (60 * 60)
+
+                    # adjust for negative durations
+                    duration += 24 * int(duration < 0)
                     entry['duration'] = duration
 
-                    # make time entry
+                    # make note entry
                     entry['note'] = line.split(')')[1].strip()
 
                     # add to current day
