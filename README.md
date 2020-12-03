@@ -70,5 +70,13 @@ frog.flick()
 
 This is useful if the frog is being used as a check list. It will remove any items already checked off.  Add an X after any note you'd like flicked away.
 
+### Eat
+
+Eat will refresh the journal page and the frog instance based on any manual edits.
+
+```buildoutcfg
+frog.eat()
+```
+
 
 ### Enjoy!
