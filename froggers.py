@@ -100,6 +100,7 @@ class Frogger(list):
 
         # Get lines
         lines = []
+        work = 0
         for day in self:
 
             # convert date
@@ -133,7 +134,17 @@ class Frogger(list):
 
                 # add total
                 total = round(sum([entry['duration'] for entry in day['entries']]), 2)
-                lines.append('Total: {} hours'.format(total))
+                lines.append('Total: {} hours\n'.format(total))
+
+                # determine weekly total
+                work += total
+
+                # add weekly total if day is mondday
+                if weekday == 'Mon':
+
+                    # add weekly total
+                    lines.append('Total Week Hours: {} hours\n'.format(work))
+                    work = 0
 
             # add spacer
             lines.append('\n')
