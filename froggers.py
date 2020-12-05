@@ -143,7 +143,7 @@ class Frogger(list):
                 if weekday == 'Mon':
 
                     # add weekly total
-                    lines.append('Total Week Hours: {} hours\n'.format(work))
+                    lines.append('Total Week Hours: {} hours\n'.format(round(work, 2)))
                     work = 0
 
             # add spacer
