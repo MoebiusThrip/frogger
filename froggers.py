@@ -101,7 +101,10 @@ class Frogger(list):
         # Get lines
         lines = []
         work = 0
-        for day in self:
+
+        # get all non empty days
+        days = [day for day in self if len(day['entries']) > 0]
+        for day in days:
 
             # convert date
             date = datetime.strftime(day['date'], '%m/%d/%Y')
