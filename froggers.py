@@ -37,6 +37,9 @@ class Frogger(list):
         # start time
         self.start = None
 
+        # previous time
+        self.previous = None
+
         # record discrete events?
         self.discrete = discrete
 
@@ -373,6 +376,9 @@ class Frogger(list):
         Populates:
             self.start
         """
+
+        # move current start to previous
+        self.previous = self.start
 
         # get now
         now = datetime.now()
