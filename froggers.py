@@ -322,6 +322,24 @@ class Frogger(list):
 
         return None
 
+    def splosh(self):
+        """Replace a mistaken splish with a splash.
+
+        Arguments:
+            None
+
+        Returns:
+            None
+        """
+
+        # return the previous time to start
+        self.start = self.previous
+
+        # now splash like normal
+        self.splash()
+
+        return None
+
     def splash(self, note=None):
         """Clock out.
 
