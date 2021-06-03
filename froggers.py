@@ -48,6 +48,21 @@ class Frogger(list):
 
         return
 
+    def __repr__(self):
+        """Define on-screen representation.
+
+        Arguments:
+            None
+
+        Returns:
+            str
+        """
+
+        # define representation
+        representation = '< Frogger instance: {} >'.format(self.path)
+
+        return representation
+
     def ask(self):
         """Ask how many hours have gone by.
 
