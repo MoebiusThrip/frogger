@@ -432,17 +432,9 @@ class Frogger(list):
         return None
 
 
-# fro.reload(fro); froggo = fro.froggo; jerko = fro.jerko; pondo = fro.pondo; frodo = fro.frodo
-# toado = fro.toado; shoppo = fro.shoppo; scopo = fro.scopo; banko = fro.banko; testo = fro.testo
-froggo = Frogger('frogs/omi_log.txt')
-pondo = Frogger('frogs/omi_thoughts.txt', discrete=True)
-jerko = Frogger('frogs/doucheberry_diaries.txt', discrete=True)
-frodo = Frogger('frogs/omi_todo.txt', discrete=True)
-toado = Frogger('frogs/general_todo.txt', discrete=True)
-shoppo = Frogger('frogs/shopping.txt', discrete=True)
-scopo = Frogger('frogs/historian_to_do.txt', discrete=True)
-banko = Frogger('frogs/cc_log.txt', discrete=True)
-testo = Frogger('frogs/test_log.txt', discrete=True)
-boquetto = Frogger('frogs/boquette.txt', discrete=True)
-ozo = Frogger('frogs/ozonator.txt', discrete=True)
-juggo = Frogger('frogs/juggernaut.txt', discrete=True)
+# set up frogs
+froggo = Frogger('frogs/froggo.txt')
+frodo = Frogger('frogs/frodo.txt', discrete=True)
+toado = Frogger('frogs/toado.txt', discrete=True)
+banko = Frogger('frogs/banko.txt', discrete=True)
+
