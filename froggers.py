@@ -432,9 +432,3 @@ class Frogger(list):
         return None
 
 
-# set up frogs
-froggo = Frogger('frogs/froggo.txt')
-frodo = Frogger('frogs/frodo.txt', discrete=True)
-toado = Frogger('frogs/toado.txt', discrete=True)
-banko = Frogger('frogs/banko.txt', discrete=True)
-
