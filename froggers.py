@@ -432,3 +432,7 @@ class Frogger(list):
         return None
 
 
+# import command
+'''
+import froggers; import ignite as ig; froggo = ig.froggo; frodo = ig.frodo; toado = ig.toado; banko = ig.banko;
+'''
