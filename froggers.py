@@ -432,7 +432,15 @@ class Frogger(list):
         return None
 
 
+# set up frogs
+froggo = Frogger('frogs/froggo.txt')
+frodo = Frogger('frogs/frodo.txt', discrete=True)
+toado = Frogger('frogs/toado.txt', discrete=True)
+banko = Frogger('frogs/banko.txt', discrete=True)
+irono = Frogger('frogs/irono.txt', discrete=True)
+
 # import command
 '''
-import froggers; import ignite as ig; froggo = ig.froggo; frodo = ig.frodo; toado = ig.toado; banko = ig.banko;
+import froggers as fro; froggo = fro.froggo; frodo = fro.frodo; toado = fro.toado; banko = fro.banko; irono = fro.irono
 '''
+
