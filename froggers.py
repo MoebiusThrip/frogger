@@ -383,7 +383,7 @@ class Frogger(list):
         self[0]['entries'].append(entry)
 
         # print
-        print('splash!')
+        print('splash! {}'.format(finish))
 
         # if not discrete
         if not self.discrete:
@@ -427,7 +427,7 @@ class Frogger(list):
             self.insert(0, day)
 
         # print
-        print('splish...')
+        print('splish...{}'.format(self.start))
 
         return None
 
