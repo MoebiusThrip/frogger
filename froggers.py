@@ -82,6 +82,39 @@ class Frogger(list):
         total = round(sum([entry['duration'] for entry in self[0]['entries']] + [duration]), 2)
         print('{} hours so far...'.format(total))
 
+        # print total left for day
+        left = 8 - total
+        print('{} hours left today.'.format(left))
+
+        # print total left for week
+        week = 0
+        monday = (self[0]['date'].weekday() == 0)
+        for member in self[1:]:
+
+            # if not conclusion
+            if not monday:
+
+                # add all durations
+                day = round(sum([entry['duration'] for entry in member['entries']]), 2)
+                week += day
+
+            # otherwise
+            else:
+
+                # break loop
+                break
+
+            # check for monday
+            if member['date'].weekday() == 0:
+
+                # set concludion
+                monday = True
+
+        # add all durations
+        week += total
+        left = 40 - week
+        print('{} hours left this week.'.format(left))
+
         return None
 
     def croak(self, note=None):
