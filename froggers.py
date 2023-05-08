@@ -84,11 +84,11 @@ class Frogger(list):
 
         # print total left for day
         left = 8 - total
-        print('{} hours left today.'.format(left))
+        print('{} hours left today.'.format(round(left, 2)))
 
         # print total left for week
         week = 0
-        monday = (self[0]['date'].weekday() == 0)
+        monday = self[0]['date'].weekday() == 0
         for member in self[1:]:
 
             # if not conclusion
@@ -113,7 +113,7 @@ class Frogger(list):
         # add all durations
         week += total
         left = 40 - week
-        print('{} hours left this week.'.format(left))
+        print('{} hours left this week.'.format(round(left, 2)))
 
         return None
 
