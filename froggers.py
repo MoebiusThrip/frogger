@@ -472,9 +472,11 @@ toado = Frogger('frogs/toado.txt', discrete=True)
 banko = Frogger('frogs/banko.txt', discrete=True)
 irono = Frogger('frogs/irono.txt', discrete=True)
 agendo = Frogger('frogs/agendo.txt', discrete=True)
+fluco = Frogger('frogs/fluco.txt', discrete=True)
+
 
 # import command
 '''
-import froggers as fro; froggo = fro.froggo; frodo = fro.frodo; toado = fro.toado; banko = fro.banko; irono = fro.irono; agendo = fro.agendo
+import froggers as fro; froggo = fro.froggo; frodo = fro.frodo; toado = fro.toado; banko = fro.banko; irono = fro.irono; agendo = fro.agendo; fluco = fro.fluco
 '''
 
