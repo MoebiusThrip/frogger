@@ -475,4 +475,5 @@ agendo = Frogger('frogs/agendo.txt', discrete=True)
 fluco = Frogger('frogs/fluco.txt', discrete=True)
 paco = Frogger('frogs/paco.txt', discrete=True)
 ozo = Frogger('frogs/ozo.txt', discrete=True)
+tempo = Frogger('frogs/tempo.txt', discrete=True)
 
