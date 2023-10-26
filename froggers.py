@@ -180,7 +180,8 @@ class Frogger(list):
                     finish = ''
 
                 # add to lines, assuming discrete mode
-                line = '{} - {}) {}\n'.format(start, finish, entry['note'])
+                duration = round(entry['duration'], 2)
+                line = '{} - {}) ( {} ) {}\n'.format(start, finish, duration, entry['note'])
                 lines.append(line)
 
             # if not in discrete mode
@@ -348,7 +349,7 @@ class Frogger(list):
                     entry['duration'] = duration
 
                     # make note entry
-                    entry['note'] = line.split(')')[1].strip()
+                    entry['note'] = line.split(')')[-1].strip()
 
                     # add to current day
                     day['entries'].append(entry)
